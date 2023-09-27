@@ -1,10 +1,7 @@
 from fastapi import FastAPI, Request
 import uuid
 import whisper
-from dotenv import load_dotenv
 import os
-
-load_dotenv()
 
 app = FastAPI()
 
