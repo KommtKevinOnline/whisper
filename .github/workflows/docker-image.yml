@@ -11,7 +11,7 @@ on:
       - v*
 
 env:
-  IMAGE_NAME: kommtkevinonline_whisper
+  IMAGE_NAME: whisper
 
 jobs:
   # Push image to GitHub Packages.
