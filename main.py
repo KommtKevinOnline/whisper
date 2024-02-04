@@ -22,6 +22,9 @@ def api_key_auth(api_key: str = Depends(oauth2_scheme)):
 
 app = FastAPI()
 
+@app.get("/healthcheck")
+async def health_check():
+    return {"status": "UP"}
 
 @app.post("/transcribe", dependencies=[Depends(api_key_auth)])
 async def transcibe(request: Request):
